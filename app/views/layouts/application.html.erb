@@ -15,6 +15,20 @@
 	</head>
 
 	<body>
+		 <% if notice %>
+
+	  <div id="notice-wrapper">
+	    <p class="notice"><%= notice %></p>
+	  </div>
+	
+	  <% elsif alert %>
+	
+	  <div id="notice-wrapper">
+	    <p class="alert"><%= alert %></p>
+	  </div>
+
+  	<% end %>
+  	
 		<%= render 'layouts/header' %>
 		<div class="container">
 			<%= yield %>	
@@ -23,6 +37,14 @@
 		
 		<script>
   			$(".button-collapse").sideNav();
+  			
+  			$(document).ready(function() {
+		      setTimeout(function(){
+		      $('#notice-wrapper').fadeOut("slow", function() {
+		        $(this).remove();
+		        })
+		      }, 4500);
+		    });
 		</script>
 	</body>
 </html>

@@ -20,3 +20,42 @@
 #signupbtn {
 	text-align: center;
 }
+
+.show-page {
+	padding-top: 15px;
+	margin-top: 40px;
+}
+
+p.alert, p.notice {
+	padding: 1.30rem 0;
+	text-align: center;
+	margin: 0;
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+
+ody {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.show-page {
+	padding-top: 15px;
+}
+
+.nav-wrapper {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#notice-wrapper {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	background: rgba(255, 138, 128, 0.65);
+}
+
